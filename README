@@ -1,0 +1,31 @@
+NAME
+    Dist::Zilla::Plugin::Homepage - automatically sets the homepage URL
+
+VERSION
+    version 1.100700
+
+SYNOPSIS
+    In "dist.ini":
+
+        [Homepage]
+
+DESCRIPTION
+    This plugin sets the distribution's homepage URL as metadata.
+
+FUNCTIONS
+  metadata
+    Sets the homepage URL in the distribution's metadata.
+
+INSTALLATION
+    See perlmodinstall for information and options on installing Perl
+    modules.
+
+AUTHOR
+      Marcel Gruenauer <marcel@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by Marcel Gruenauer.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
