@@ -3,14 +3,16 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::Homepage;
-our $VERSION = '1.100700';
+BEGIN {
+  $Dist::Zilla::Plugin::Homepage::VERSION = '1.101420';
+}
 
-# ABSTRACT: automatically sets the homepage URL
+# ABSTRACT: Automatically sets the homepage URL
 use Moose;
 with 'Dist::Zilla::Role::MetaProvider';
 
 sub metadata {
-    my ($self, $arg) = @_;
+    my $self = shift;
     return {
         resources => {
             homepage =>
@@ -28,11 +30,11 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::Plugin::Homepage - automatically sets the homepage URL
+Dist::Zilla::Plugin::Homepage - Automatically sets the homepage URL
 
 =head1 VERSION
 
-version 1.100700
+version 1.101420
 
 =head1 SYNOPSIS
 
@@ -56,6 +58,25 @@ __END__
 =head1 INSTALLATION
 
 See perlmodinstall for information and options on installing Perl modules.
+
+=head1 BUGS AND LIMITATIONS
+
+No bugs have been reported.
+
+Please report any bugs or feature requests through the web interface at
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-Homepage>.
+
+=head1 AVAILABILITY
+
+The latest version of this module is available from the Comprehensive Perl
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see
+L<http://search.cpan.org/dist/Dist-Zilla-Plugin-Homepage/>.
+
+The development version lives at
+L<http://github.com/hanekomu/Dist-Zilla-Plugin-Homepage/>.
+Instead of sending patches, please fork this project using the standard git
+and github infrastructure.
 
 =head1 AUTHOR
 
